@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C43D66E2-A7C8-466A-B789-39697CF3B1F7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Pomodoro</RootNamespace>
+    <AssemblyName>Pomodoro</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <Nullable>enable</Nullable>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Chime.cs" />
+    <Compile Include="CustomChimeModal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomChimeModal.Designer.cs">
+      <DependentUpon>CustomChimeModal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomNote.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NewPomodoroModal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewPomodoroModal.Designer.cs">
+      <DependentUpon>NewPomodoroModal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimerModal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimerModal.Designer.cs">
+      <DependentUpon>TimerModal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PomodoroManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PomodoroManager.Designer.cs">
+      <DependentUpon>PomodoroManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NamedPomodoro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NamedPomodoro.Designer.cs">
+      <DependentUpon>NamedPomodoro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NamedTimer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NamedTimer.Designer.cs">
+      <DependentUpon>NamedTimer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PomSpan.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CustomChimeModal.resx">
+      <DependentUpon>CustomChimeModal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewPomodoroModal.resx">
+      <DependentUpon>NewPomodoroModal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimerModal.resx">
+      <DependentUpon>TimerModal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PomodoroManager.resx">
+      <DependentUpon>PomodoroManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NamedPomodoro.resx">
+      <DependentUpon>NamedPomodoro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NamedTimer.resx">
+      <DependentUpon>NamedTimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

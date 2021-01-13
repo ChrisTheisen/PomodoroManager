@@ -1,0 +1,15 @@
+C:\Users\theis\source\repos\Pomodoro\Pomodoro\bin\Debug\Pomodoro.exe.config
+C:\Users\theis\source\repos\Pomodoro\Pomodoro\bin\Debug\Pomodoro.exe
+C:\Users\theis\source\repos\Pomodoro\Pomodoro\bin\Debug\Pomodoro.pdb
+C:\Users\theis\source\repos\Pomodoro\Pomodoro\obj\Debug\Pomodoro.NamedTimer.resources
+C:\Users\theis\source\repos\Pomodoro\Pomodoro\obj\Debug\Pomodoro.Properties.Resources.resources
+C:\Users\theis\source\repos\Pomodoro\Pomodoro\obj\Debug\Pomodoro.csproj.GenerateResource.cache
+C:\Users\theis\source\repos\Pomodoro\Pomodoro\obj\Debug\Pomodoro.csproj.CoreCompileInputs.cache
+C:\Users\theis\source\repos\Pomodoro\Pomodoro\obj\Debug\Pomodoro.exe
+C:\Users\theis\source\repos\Pomodoro\Pomodoro\obj\Debug\Pomodoro.pdb
+C:\Users\theis\source\repos\Pomodoro\Pomodoro\obj\Debug\Pomodoro.TimerModal.resources
+C:\Users\theis\source\repos\Pomodoro\Pomodoro\obj\Debug\Pomodoro.PomodoroManager.resources
+C:\Users\theis\source\repos\Pomodoro\Pomodoro\obj\Debug\Pomodoro.NamedPomodoro.resources
+C:\Users\theis\source\repos\Pomodoro\Pomodoro\obj\Debug\Pomodoro.NewPomodoroModal.resources
+C:\Users\theis\source\repos\Pomodoro\Pomodoro\obj\Debug\Pomodoro.csprojAssemblyReference.cache
+C:\Users\theis\source\repos\Pomodoro\Pomodoro\obj\Debug\Pomodoro.CustomChimeModal.resources
